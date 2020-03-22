@@ -1,0 +1,18 @@
+.chat{
+    border-radius: 10px;
+}
+
+#message{
+    width: 100%;
+}
+
+.toolbox{
+    display: flex;
+    width: 100%;
+}
+.pusher{
+    width: 100%;
+}
+.pusher ul{
+    list-style: none;
+}

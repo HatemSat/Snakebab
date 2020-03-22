@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kebab Space Snake</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #bill>li {
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body background="/back.png">
+    <br>
+    <div class="row">
+        <h1 style="margin: auto;color: blue">Kebab Space Snake</h1>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+        <div style="margin: auto" id="test">
+            <canvas id="canvas"></canvas>
+            <div class="row">
+                <div style="margin: auto">
+                    <h1 id="score" style="color: red"></h1>
+                    <h1 id="jam" style="color: yellow"></h1>
+                </div>
+            </div>
+            <table>
+                <ul id="bill"></ul>
+            </table>
+        </div>
+
+        <div class="col-md-3 chat" style="background-color: white;margin-right: 10%; margin-left:10px">
+            <div class="row pusher" style="position: absolute;bottom: 0">
+                <ul id="messages"></ul>
+                <form action="" style="width: 100%">
+                    <div class="toolbox">
+                        <input id="message" type="text">
+                        <button id="sendButton" class="btn btn-info"
+                            style="margin-right: 0px;margin-bottom: 0px">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <img id="gameover" width="600" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="socket.io.js"></script>
+    <script src="snake.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

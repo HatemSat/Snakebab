@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kebab Space Snake | Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body background="/back.png">
+    <div class="row">
+        <div class="col-xs-2" style="margin: auto;margin-top: 400px">
+            <label style="color: blueviolet;font-size: 20px">Pseudo :</label>
+            <input type="text" style="margin-left: auto" id="pseudo">
+            <button id="bouton">Jouer</button>
+        </div>
+    </div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    let input = document.querySelector('input').focus();
+    let bouton = document.querySelector('button');
+
+    document.addEventListener("keydown", function (event) {
+        if (event.keyCode === 13) {
+            // event.preventDefault();
+            console.log('entrée')
+            bouton.click();
+        }
+    });
+
+    bouton.addEventListener('click', () => {
+        let pseudo = document.querySelector('input').value;
+        // window.location = `http://192.168.1.76:3000/login?name=${pseudo}`;
+        window.location = `http://localhost:3003/login?name=${pseudo}`;
+        // window.location = `http://snake.hatemsat.fr/login?name=${pseudo}`;
+    })
+</script>
+
+</html>
